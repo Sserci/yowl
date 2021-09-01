@@ -1,0 +1,33 @@
+services:
+  vuejs-app:
+    build: ./client/
+    restart: always
+    volumes:
+      - type: bind
+        source: ./client
+        target: /app
+    depends_on:
+      - laravel-app
+    ports:
+      - 8080:8080
+
+  laravel-app:
+    build: ./api/
+    restart: always
+    volumes:
+      - type: bind
+        source: ./api
+        target: /app
+    depends_on:
+      - db
+    ports:
+      - 8181:8181
+
+  db:
+    image: mariadb
+    restart: always
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: diballe

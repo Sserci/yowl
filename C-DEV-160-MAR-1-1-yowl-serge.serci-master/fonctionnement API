@@ -1,0 +1,48 @@
+JSON raw register
+{
+ 
+ "name": "serge",
+ "password": "passwordserge",
+ "email": "serge3@mail.fr",
+ "birthday": "1990/01/01"
+}
+
+JSON raw categories
+
+{
+ 
+ "name": "computer"
+
+}
+JSON raw comments
+
+{
+ 
+ "content": "carapuce",
+ "user_id":"1",
+ "review_id":"1"
+
+}
+
+JSON raw reviews
+{
+ 
+ "title": "salameche",
+ "user_id":"1",
+ "cat_id":"1",
+ "description":"pokemon",
+ "rate":4,
+ "photo":"../client/public/picto.png",
+ "url":"https://www.amazon.fr/dp/B094Z4FGWH/ref=gw_fr_desk_h1_aucc_lsr_th_mwac_0821?pf_rd_r=Z4MNK8PDD6P4SEGGD6V6&pf_rd_p=a4367c3c-4877-4666-94b9-7c59e43af20d&pd_rd_r=68176a89-2e41-4330-b280-a1129d0e6526&pd_rd_w=AasVV&pd_rd_wg=an8hI&ref_=pd_gw_unk"
+
+}
+JSON raw login
+
+{
+ 
+ "email": "serge3@mail.fr",
+ "password":"passwordserge"
+ 
+
+}
+
